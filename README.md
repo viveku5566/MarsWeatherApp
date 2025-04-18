@@ -6,7 +6,39 @@
 
 ## 📁 Project Structure
 
-MarsWeatherApp/ │ ├── backend/ # Express backend API │ ├── src/ │ │ ├── config/ # Configuration files (e.g., API keys) │ │ ├── controllers/ # Express controllers │ │ ├── routes/ # Express routes │ │ ├── services/ # NASA API service logic │ │ ├── utils/ # Utility functions │ │ └── app.js # Express app initialization │ ├── index.js # App entry point │ └── .env # Environment variables │ ├── frontend/ # React Native frontend │ ├── src/ │ │ ├── app/ # Redux store │ │ ├── components/ # Reusable UI components (WeatherCard, etc.) │ │ ├── features/ # Redux slices │ │ ├── hooks/ # Custom hooks (Redux wrapper) │ │ ├── screens/ # Screens (HomeScreen) │ │ ├── services/ # API integration layer │ │ ├── styles/ # Styled-components and themes │ │ └── utils/ # Utility functions │ ├── App.tsx # Root component │ ├── tsconfig.json # TypeScript config │ ├── jest.config.js # Jest config for testing │ └── tests/ # Jest unit tests │ └── README.md # Project overview and usage instructions
+MarsWeatherApp/
+├── backend/                     # 🌐 Express backend API
+│   ├── src/
+│   │   ├── config/              # API keys and constants
+│   │   ├── controllers/         # Route handler functions
+│   │   ├── routes/              # API endpoints
+│   │   ├── services/            # NASA API integration logic
+│   │   ├── utils/               # Pagination and helpers
+│   │   └── app.js               # Express app setup
+│   ├── index.js                 # Server entry point
+│   └── .env                     # Environment variables (NASA_API_KEY)
+│
+├── frontend/                    # ⚛️ React frontend (SCSS + Redux)
+│   ├── public/                  # Static files
+│   ├── src/
+│   │   ├── app/                 # Redux store setup
+│   │   ├── components/          # Reusable UI components
+│   │   │   ├── WeatherCard.tsx
+│   │   │   └── WeatherCard.scss
+│   │   ├── features/            # Redux slices (weatherSlice, etc.)
+│   │   ├── hooks/               # Custom Redux hooks
+│   │   ├── screens/             # Page-level views
+│   │   │   ├── HomeScreen.tsx
+│   │   │   └── HomeScreen.scss
+│   │   ├── services/            # API calls to backend
+│   │   ├── styles/              # Global SCSS and variables
+│   │   │   ├── index.scss       # Root SCSS imports
+│   │   │   └── variables.scss   # Colors, fonts, spacing, etc.
+│   │   └── utils/               # Utility helpers
+│   ├── App.tsx                  # App wrapper with Providers
+│   ├── tsconfig.json            # TypeScript configuration
+│   ├── jest.config.js           # Jest testing config
+│   └── tests/                   # Unit tests with RTL + Jest
 
 ## 🌐 Backend API (Node.js + Express)
 
