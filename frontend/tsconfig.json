@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "jsx": "react-native",
+    "strict": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "allowJs": true,
+    "skipLibCheck": true,
+    "baseUrl": "./",
+    "paths": {
+      "*": [
+        "src/*"
+      ]
+    },
+    "types": [
+      "react",
+      "react-native",
+      "styled-components",
+      "jest"
+    ]
+  },
+  "include": [
+    "src",
+    "src/styles",
+    "src/styles/styled-components.d.ts"
+  ]
+}
